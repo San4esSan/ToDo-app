@@ -10,7 +10,8 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      toDoInit('.app-container');
+      const user = prompt('Введи имя пользователя')
+      toDoInit('.app-container', user);
     });
   </script>
 </head>
