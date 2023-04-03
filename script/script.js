@@ -2,7 +2,7 @@ import control from './modules/control.js'
 import render from './modules/render.js'
 import serviceStorage from './modules/serviceStorage.js'
 
-const {delControl, completeControl, formControl} = control;
+const {delControl, completeControl, formControl, addNumber} = control;
 const {renderToDo, renderTascs} = render;
 const {getStorage} = serviceStorage;
 
@@ -20,6 +20,7 @@ const {getStorage} = serviceStorage;
     delControl(user, list, data);
     completeControl(user, list, data);
     formControl(user, form, list);
+    addNumber();
   };
 
   window.toDoInit = init;
